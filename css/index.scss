@@ -1,3 +1,69 @@
 body {
   background: seagreen;
+  color: #fff;
+  font-family: 'Open Sans', serif;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: #1b1f2b;
+
+  & img {
+    width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+  }
+
+  & .row {
+    height: 100vh;
+  }
+
+  & .box {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+
+    & span {
+      font-size: 25px;
+
+      & b {
+        color: #4CAF50;
+      }
+    }
+  }
+
+  & nav {
+    margin-top: -62px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background-color: #262b37;
+
+    & a {
+      display: inline-block;
+      color: #c3c8d6;
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-decoration: none;
+      outline: none;
+      padding: 22px 25px;
+      line-height: 18px;
+      text-align: center;
+
+      &.active {
+        background: #1b1f29;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
 }
